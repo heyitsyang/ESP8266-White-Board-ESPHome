@@ -1,46 +1,14 @@
 
-# THE COMMENTED LINES BELOW NEED TO BE EDITED, UNCOMMENTED
-# AND ADDED TO YOUR LOCAL YAML.  DO NOT ADD THE WHITE BOARD PACKAGE DEFINITIONS
-# TO YOUR LOCAL YAML FILE
+# After ESPHome gnerates your core configuration, paste the following six
+# commented lines to your local .yaml file, uncomment the lines, save your local file, and install.
+# Your local yaml file will pick up the White Board definitions from this github repository.
 
-# # Change the name to whatever you like
-#esphome:
-#   name: whiteboard-esphome
-#   friendly_name: whiteboard-esphome
-
-# esp8266:
-#   board: esp01_1m
-
-# # Enable logging
-# logger:
-
-# # Enable Home Assistant API
-# api:
-#   encryption:
-#     key: "<your auto generated API key>"
-
-# ota:
-#   password: "<your auto generated OTA key>""
-
-# wifi:
-#   ssid: !secret wifi_ssid
-#   password: !secret wifi_password
-
-# # Enable fallback hotspot (captive portal) in case wifi connection fails
-# # change the ssid & password to wahtever you like
-#   ap:
-#     ssid: "WB-Esphome"
-#     password: "handsontech"    
-# captive_portal:
-
-# # The rest of the configuration is in the indicated yaml file ar the github address below
 # packages:
 #   remote_esp8266_wb: 
 #     url: https://github.com/heyitsyang/ESP8266-White-Board-ESPHome
 #     ref: main
 #     files:
 #       - esp8266_white_board_esphome.yaml
-
 
 
 
