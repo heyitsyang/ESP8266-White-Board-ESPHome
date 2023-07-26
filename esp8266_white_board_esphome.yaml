@@ -1,30 +1,30 @@
-esphome:
-  name: whiteboard-esphome
-  friendly_name: whiteboard-esphome
+# esphome:
+#   name: whiteboard-esphome
+#   friendly_name: whiteboard-esphome
 
-esp8266:
-  board: esp01_1m
+# esp8266:
+#   board: esp01_1m
 
-# Enable logging
-logger:
+# # Enable logging
+# logger:
 
-# Enable Home Assistant API
-api:
-  encryption:
-    key: "hX2f3cEMh+gsQ87E1S1oIsjZ6fnqCbg39ZIugHUkbv4="
+# # Enable Home Assistant API
+# api:
+#   encryption:
+#     key: "hX2f3cEMh+gsQ87E1S1oIsjZ6fnqCbg39ZIugHUkbv4="
 
-ota:
-  password: "27c2376fe76d698c2875f05ff1114bc0"
+# ota:
+#   password: "27c2376fe76d698c2875f05ff1114bc0"
 
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+# wifi:
+#   ssid: !secret wifi_ssid
+#   password: !secret wifi_password
 
-# Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "Whiteboard-Esphome"
-    password: "handsontech"
-captive_portal:
+# # Enable fallback hotspot (captive portal) in case wifi connection fails
+#   ap:
+#     ssid: "Whiteboard-Esphome"
+#     password: "handsontech"
+# captive_portal:
 
 
 # output components (pins) need to be identified here before
