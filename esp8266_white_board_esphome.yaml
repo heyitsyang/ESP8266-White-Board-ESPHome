@@ -36,7 +36,7 @@ output:
     pin: GPIO16
     id: output_component_relay
 
-# use a switch for the relay and beeper
+# create switch entities for the relay and beeper
 switch:
   - platform: output
     name: "beeper"
@@ -45,18 +45,19 @@ switch:
     name: "relay"
     output: output_component_relay
 
-# set up RGB light - color blending is done in HA UI
+# create a RGB light entity binding the three RGB outputs
 light:
   - platform: rgb
     name: "RGB LED"
     red: output_component_red
     green: output_component_grn
     blue: output_component_blu
+    # create an entity for the white light
   - platform: monochromatic
     name: "White LED"
     output: output_component_wht
 
-# binary_sensors are inputs with only two possible states
+# create binary_sensor entities for S2 & S3
 # the invert filters are because buttons are active low
 binary_sensor:
   - platform: gpio
@@ -70,7 +71,7 @@ binary_sensor:
     filters:
       - invert
 
-# Define pins for DHT Temp/HUM sensors
+# create sensor entities for DHT and AtoD
 # AtoD uses the built-in function in the ESP8266
 sensor:
   - platform: dht
