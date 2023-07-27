@@ -14,8 +14,8 @@
 
 #### vvvvvvvv WHITE BOARD PACKAGE DEFINITIONS BEGIN BELOW vvvvvvvvvvv ####
 
-# output components (pins) need to be identified here before
-# they can be used by other entities
+# output components (pins) need to be defined before
+# they can be used by entities
 output:
   - platform: esp8266_pwm
     id: output_component_red
@@ -78,8 +78,10 @@ sensor:
     pin: GPIO4
     temperature:
       name: "DHT11 Temperature"
+      unit_of_measurement: "°C"
     humidity:
       name: "DHT11 Humidity"
+      unit_of_measurement: "%"
     update_interval: 60s
   - platform: adc
     pin: A0
