@@ -1,5 +1,5 @@
 
-# After ESPHome gnerates your core configuration, paste the following six
+# After ESPHome gnerates your core configuration, append the following six
 # commented lines to your local .yaml file, uncomment the lines, save your local file, and install.
 # Your local yaml file will pick up the White Board definitions from this github repository.
 
@@ -10,7 +10,9 @@
 #     files:
 #       - esp8266_white_board_esphome.yaml
 
-
+# If you wish to just include all of the white board definitions in your 
+# code rather than loading it from here, simply copy the lines below and
+# append it to the end of your core configuration code.
 
 #### vvvvvvvv WHITE BOARD PACKAGE DEFINITIONS BEGIN BELOW vvvvvvvvvvv ####
 
