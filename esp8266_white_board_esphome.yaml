@@ -14,6 +14,8 @@
 # code rather than loading it from here, simply copy the lines below and
 # append it to the end of your core configuration code.
 
+# Don't forget you need to hold down S2 while powering up to enable the board for downloading.
+
 #### vvvvvvvv WHITE BOARD PACKAGE DEFINITIONS BEGIN BELOW vvvvvvvvvvv ####
 
 # output components (pins) need to be defined before
